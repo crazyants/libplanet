@@ -64,13 +64,10 @@ To be released.
     became to validate only the next block to be appended.  [[#210]]
  -  Improved `BlockChain<T>.Fork()` performance by avoiding double validation
     of already validated blocks.  [[#215]]
-<<<<<<< HEAD
  -  The calculation algorithm of `BlockPolicy<T>.GetNextBlockDifficulty()`
     method is changed.  [[#213]]
-=======
  -  Removed unnecessary reader lock on `BlockChain<T>.StageTrasactions()`. [[#217]]
  -  Improve concurrency of `BlockChain<T>.GetState()`. [[#217]]
->>>>>>> feature/tune-blockchain-lock
 
 [#185]: https://github.com/planetarium/libplanet/pull/185
 [#187]: https://github.com/planetarium/libplanet/issues/187
