@@ -58,6 +58,8 @@ To be released.
     became to validate only the next block to be appended.  [[#210]]
  -  Improved `BlockChain<T>.Fork()` performance by avoiding double validation
     of already validated blocks.  [[#215]]
+ -  Removed unnecessary reader lock on `BlockChain<T>.StageTrasactions()`. [[#217]]
+ -  Improve concurrency of `BlockChain<T>.GetState()`. [[#217]]
 
 [#185]: https://github.com/planetarium/libplanet/pull/185
 [#187]: https://github.com/planetarium/libplanet/issues/187
@@ -68,6 +70,7 @@ To be released.
 [#206]: https://github.com/planetarium/libplanet/pull/206
 [#210]: https://github.com/planetarium/libplanet/pull/210
 [#215]: https://github.com/planetarium/libplanet/pull/215
+[#215]: https://github.com/planetarium/libplanet/pull/217
 
 
 Version 0.2.2
